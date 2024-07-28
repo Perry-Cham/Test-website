@@ -1,0 +1,625 @@
+
+:root{
+  --main-color:hsla(0,100%,58%,1);
+  --second-color:#FFFF00;
+}
+body{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+/* Image Slider */
+
+#imageslider{
+  min-height: 50vh;
+  height: auto;
+  position: relative;
+}
+#placeholder{
+  text-align: center;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('Images/Company pics/PREMIER IMAGE_20240712_174254_0000.png');
+  background-size: cover;
+  background-position: top;
+  color: white;
+}
+.sliderbtn{
+  font-size: 14px;
+  
+}
+#imageslider div{
+  padding: 1px;
+  border: solid 2px;
+  
+}
+
+#slider {
+  height: auto;
+}
+
+#slider div{
+   display: none;
+}
+
+#slide2{
+  margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+}
+#slide2 img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right:0;
+  bottom: 0;
+  z-index: -1;
+  transition: all 15s;
+}
+#slider .active{
+  display:block;
+}
+
+.sbtn{
+  position: absolute;
+  top: 50%;
+  padding: 10px 15px;
+  background-color: #8a8a8aa9;
+  font-size: 18px;
+  opacity: 0.8;
+  border-radius: 50%;
+  border: none;
+  z-index: 1;
+}
+
+#leftbtn{
+  left:0;
+}
+#rightbtn{
+  right:0;
+}
+.slideUp{
+  display: inline-block;
+  animation: slideUp 2s ease;
+}
+.brand{
+  font-weight: bold;
+}
+
+.zoom{
+  transform: scale(2);
+}
+
+/* End of Slider */
+
+/* Header Styles */
+/* header{
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(0,100%,58%,1);
+  box-shadow: 5px 5px 5px hsla(0,0%,0%,0.5);
+} */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: hsla(0,100%,58%,1);
+ box-shadow:0 5px 10px  hsla(220, 32%, 8%, .5); 
+}
+
+#logo h2{
+  display: inline-block;
+  color: #FFFF00;
+}
+.logo{
+  height: 50px;
+  width: auto;
+  transform: translateY(28%);
+  margin: 0 13px;
+}
+li{
+  list-style: none;
+}
+header buttons{
+  z-index: 0;
+}
+
+
+/* Dropdown Menu  */
+/* .regularMenu{
+  display: none;
+}
+.dropdownMenu a{
+  text-decoration: none;
+  color: white;
+}
+
+main{
+  position: relative;
+}
+.dropdownMenu{
+  position:absolute;
+  top: 55px;
+  right: 10px;
+  padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #000000cf;
+  height:0;
+  overflow: hidden;
+  width: clamp(130px, 50%, 300px);
+  transition: height 1s;
+  backdrop-filter: blur(15px);
+  z-index: 2;
+}
+.open{
+  height:clamp(250px, 1.5em, 300px);
+}
+*/
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#logo h2{
+  display: inline-block;
+  color: #FFFF00;
+}
+.logo{
+  height: 50px;
+  width: auto;
+  transform: translateY(28%);
+  margin: 0 13px;
+}
+li{
+  list-style: none;
+}
+header buttons{
+  z-index: 0;
+}
+
+
+/* Dropdown Menu  */
+.regularMenu{
+  display: none;
+}
+.dropdownMenu a{
+  text-decoration: none;
+  color: white;
+}
+
+main{
+  position: relative;
+  overflow-x: hidden;
+}
+
+.dropdownMenu{
+  position:absolute;
+  margin-top: 0;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  min-height: 100vh;
+  padding:15px 0 0 0;
+  border-radius: 15px 0 0 15px;
+  background-color: #000000cf;
+  overflow: hidden;
+  width: clamp(130px, 50%, 400px);
+  transition: all 1s;
+  backdrop-filter: blur(15px);
+  z-index: 2;
+  /* max-height: 1000px; */
+}
+.dropdownMenu li{
+  padding: 1rem 1rem 1rem 2rem;
+}
+.open{
+  transform: translateX(0);
+}
+   
+/* Products Dropdown */
+.dropdown{
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 2rem;
+  transition: padding .8s;
+}
+
+.List{
+  padding-left: 0;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1s;
+  background-color: hsla(0, 3%, 40%, 0.2);
+  border-radius: 10px;
+  width: 100%;
+  backdrop-filter: blur(15px);
+}   
+
+.List li{
+  padding: 1.25rem 0 1.25rem 3rem;
+}
+/* Activate DropDown */
+.active{
+  max-height: 1000px;
+}
+.dropdownPadding{
+  padding-bottom: 1rem;
+}
+
+
+/* Products dropdown Icon */
+.dropdown i{
+  transition:all .8s;
+}
+.rotate{
+  transform: rotate(180deg);
+}
+
+
+
+
+#icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:40px;
+  height: 40px;
+  margin:18px 8px;
+  border-radius:5px;
+  background-color: hsl(0,100%,61.8%);
+  color: white;
+}
+
+#icon i {
+  font-size: 23px;
+  margin: 0;
+}
+.spin{
+  animation: rotate 3s;
+}
+@keyframes rotate{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+.slideIn{
+  animation: slideIn 1.5s ease;
+}
+@keyframes slideIn {
+  from{transform: translateX(-100%)}
+  to{ transform: translateX(0)}
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 2s;
+}
+
+
+@keyframes slideUp{
+  from{transform: translateY(100px);}
+  to{transform: translateY(0);}
+}
+
+#placeholder h3{
+  animation: slideIn;
+  animation-duration: 2s;
+}
+
+  
+/* Background Curves */
+.curve{
+  height: 150px;
+  width: 100%;
+  position: relative;
+  transform: rotate(180deg);
+  background-position: center;
+  background-color: var(--main-color);
+}
+.wave{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    height:100%;
+}
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(165% + 1.3px);
+    height: 100%;
+}
+
+.wave .shape-fill {
+    fill: #FFF900;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .wave svg {
+        width: calc(162% + 1.3px);
+        height: 124px;
+    }
+}
+#endSection{
+  transform:none;
+}
+
+
+/* Three Boxes */
+#Boxes h2{
+  text-align: center;
+  letter-spacing: -1%;
+}
+#Boxes h2:before{
+  content:"~";
+}
+#Boxes h2:after{
+    content:"~";
+}
+#Boxes{
+  margin-top: 0;
+  border: solid 2px;
+  height: 185vh;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+}
+#Boxes article{
+  margin:25px auto;
+  width: 95%;
+  height: 290px;
+  border: solid 2px;
+  border-radius: 5px;
+  position:relative;
+}
+#beef{
+  background-image: url('Images/Food Posters/Beef.png');
+  background-position: center;
+  background-size: cover;
+}
+#chicken{
+   background-image: url('Images/Food Posters/Chicken.png');
+   background-position: center;
+  background-size: cover;
+}
+#chicken div{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFF00;
+  font-size: 25px;
+  transform: scale(0);
+  background-color: hsla(0,100%,58%,.9);
+  transition: all 1s ease;
+}
+#ready div{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  transform: scale(0);
+  background-color: hsla(0,100%,58%,.9);
+  transition: all 1s ease;
+}
+#beef div{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  transform: scale(0);
+  background-color: hsla(0,100%,58%,.9);
+  transition: all 1s ease;
+}
+#pork div{
+  width:100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  transform: scale(0);
+  background-color: hsla(0,100%,58%,.9);
+  transition: all 1s ease;
+}
+#pork{
+   background-image: url('Images/Food Posters/Pork.png');
+   background-position: center;
+  background-size: cover;
+}
+#ready{
+   background-image: url('Images/Food Posters/Ready.png');
+   background-position: center;
+  background-size: cover;
+}
+
+/* Order Now Styles */
+
+#order{
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  height: 30vh;
+  max-height: 226px;
+  position: relative;
+  background-color: var(--main-color);
+}
+#image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  box-shadow: 3px 6px 10px #373737;
+}
+#order h2{
+  color: white;
+   z-index: 5;
+   cursor: pointer;
+}
+
+
+/* Footer Styles */
+footer{
+  padding: 15px 5px 5px 10px;
+  background-color: #373737;
+  color: white;
+}
+#Copyright{
+  text-align: center;
+}
+#contactInfo div{
+  display: inline-block;
+}
+#contactInfo{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+}
+ 
+#socials{
+  width: 100%;
+  display: flex;
+  margin-bottom: 18px;
+  justify-content: space-around;
+  margin: auto;
+}
+
+#socials i{
+  font-size: 18px;
+}
+hr{
+  height: 2px;
+  width:95%;
+  background-color: black;
+  margin:20px auto ;
+  border-radius: 1px;
+}
+
+
+
+ /* About Styles */
+#aboutInfo{
+  height: 150vh;
+  border: solid 2px;
+  margin-top: 0;
+  font-size: 0.8rem;
+}
+#aboutInfo div {
+  height: clamp(200px, 45%, 480px);
+  margin:10px 15px 40px 15px;
+  border:solid 2px;
+  padding: 0 15px 15px 15px;
+  text-align: justify;
+  line-height: 1.4em;
+  opacity: 0;
+  transition: all 2s;
+}
+#aboutInfo a, #placeholder a{
+  background-color: var(--main-color);
+  border-radius:25px;
+  color:white;
+  padding: 8px;
+  border: none;
+  font-size:1em;
+  font-weight: bold;
+  letter-spacing: .7px;
+  transition: all .8s ease;
+}
+#aboutInfo a:hover{
+  transform: translateY(-10px);
+}
+#outro{
+  line-height: 1.4em;
+  position: relative;
+  filter: blur(5px);
+  transition-delay: 800ms;
+}
+#outro img{
+  width:48%;
+  height:auto;
+  border-radius: 5px;
+}
+#intro{
+  position: relative;
+  filter: blur(5px);
+  
+}
+
+#aboutInfo h3 {
+  text-align: center;
+  background-color: var(--main-color);
+  margin: 9px 0;
+  padding: 8px;
+  color:white;
+  font-size: 18px;
+  
+}
+.triangle{
+ width:40px;
+ transform: scale(2);
+ height:auto;
+ position: absolute;
+ top:0;
+ left: 15px;
+}
+#aboutInfo .fadeIn{
+  opacity: 1;
+  filter: blur(0);
+}
+#Copyright{
+  margin:15px auto;
+  font-size: 0.9rem;
+}
+
+/* Media Queries */
+@media only screen and (max-width:350px){
+  .dropdownMenu{
+    width: 92%;
+  }
+}
+
+/* Animations */
