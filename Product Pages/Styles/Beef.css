@@ -16,10 +16,12 @@ main {
   font-family: Magdelin;
 }
 .intro{
-  padding-left: 10px;
+  padding-left: 5px;
   padding-right: 10px;
   text-align: justify;
-  font-family: Book Antiqua;
+}
+.intro p{
+  font-size: 15px;
 }
 .intro:nth-child(3){
 margin-top: 3px;
