@@ -16,11 +16,11 @@ if (icon.classList.contains("fa-bars")) {
   icon.classList.add("fa-bars")
 }
 } );
-const arrow = document.querySelector(".dropdown i")    
-const dropdown = document.querySelector(".dropdown")
 
 
 //dropdown menu
+const arrow = document.querySelector(".dropdown i")    
+const dropdown = document.querySelector(".dropdown")
     const list = document.querySelector(".List")
     dropdown.addEventListener("click", () => {
       dropdown.classList.toggle("dropdownPadding")

@@ -1,9 +1,8 @@
 :root{
-  :root{
     --main-color:hsla(0,100%,58%,1);
     --second-color:#FFFF00;
   }
-}
+
 main {
   font-family: Open Sans;
 }
