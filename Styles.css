@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/samsungone');
 @import url('https://fonts.cdnfonts.com/css/open-sans');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     --main-color: hsla(0, 100%, 58%, 1);
@@ -70,7 +71,7 @@ a {
     transition: all 15s;
 }
 #slider .active {
-    display: block;
+    display: flex;
 }
 
 .sbtn {
@@ -135,6 +136,7 @@ header buttons {
 #logo h2 {
     display: inline-block;
     color: #ffff00;
+    font-family: "Source Sans 3", sans-serif;
 }
 .logo {
     height: 50px;
