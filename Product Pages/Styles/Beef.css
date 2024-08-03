@@ -29,7 +29,7 @@ margin-top: 3px;
 .gridContainer{
   display: grid;
   padding: 5px;
-  grid-template-columns: repeat(auto-fit, minmax(195px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
   grid-auto-rows: 250px;
   margin-bottom: 20px;
 }
@@ -72,4 +72,9 @@ article img{
   height: 100%;
   
   border-radius: 15px;
+}
+@media only screen and (min-width:500) {
+  .gridContainer{
+    grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  }
 }

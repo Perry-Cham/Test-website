@@ -14,7 +14,7 @@ body {
     
 }
 
-a {
+a{
     color: black;
     text-decoration: none;
 }
@@ -37,61 +37,10 @@ a {
     background-position: top;
     color: white;
 }
-.sliderbtn {
-    font-size: 14px;
-}
-#imageslider div {
-    padding: 1px;
-    border: solid 2px;
-}
 
-#slider {
-    height: auto;
-}
 
-#slider div {
-    display: none;
-}
 
-#slide2 {
-    margin-top: 10px;
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-}
-#slide2 img {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: all 15s;
-}
-#slider .active {
-    display: flex;
-}
 
-.sbtn {
-    position: absolute;
-    top: 50%;
-    padding: 10px 15px;
-    background-color: #8a8a8aa9;
-    font-size: 18px;
-    opacity: 0.8;
-    border-radius: 50%;
-    border: none;
-    z-index: 1;
-}
-
-#leftbtn {
-    left: 0;
-}
-#rightbtn {
-    right: 0;
-}
 .slideUp {
     display: inline-block;
     animation: slideUp 2s ease;
@@ -113,18 +62,11 @@ header {
     justify-content: space-between;
     background-color: hsla(0, 100%, 58%, 1);
     box-shadow: 0 5px 10px hsla(220, 32%, 8%, 0.5);
+    min-height: 80px;
 }
 
-#logo h2 {
-    display: inline-block;
-    color: #ffff00;
-}
-.logo {
-    height: 50px;
-    width: auto;
-    transform: translateY(28%);
-    margin: 0 13px;
-}
+
+
 li {
     list-style: none;
 }
@@ -134,15 +76,14 @@ header buttons {
 
 
 #logo h2 {
+    margin:revert;
     display: inline-block;
     color: #ffff00;
-    font-family: "Source Sans 3", sans-serif;
 }
 .logo {
-    height: 50px;
-    width: auto;
-    transform: translateY(28%);
-    margin: 0 13px;
+   height:50px;
+   width: auto;
+   margin: 0 13px;
 }
 li {
     list-style: none;
@@ -170,7 +111,7 @@ header buttons {
   }
   .regularMenu a{
     color: white;
-  
+    text-decoration: none;
   }
   .regularMenu li{
     transition: all 1s;
@@ -202,6 +143,7 @@ header buttons {
   }
   .regularDropdown a{
     color: black;
+    text-decoration: none;
   
   }
   

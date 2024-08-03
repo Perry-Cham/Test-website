@@ -76,49 +76,12 @@ boxes[0].addEventListener("click", () => {
 }
     
   } )
-  
-  //Image Slider
- /* const slideImg = document.querySelector("#slide2 img");
-  const sliderDivs = document.querySelectorAll("#slider div");
-  sliderDivs[0].classList.add("active")
-  const sliderBtns = document.querySelectorAll("#imageslider button")
-  let index = 0;
-  
-  sliderBtns[0].addEventListener("click", () => {
-    index--;
-    for (let i = 0; i < sliderDivs.length; i++) {
-     sliderDivs[i].classList.remove("active")
-    }
-    if (index === -1) {
-      index = sliderDivs.length - 1;
-    }
-    console.log(index)
-    sliderDivs[index].classList.add("active")
-    slideImg.classList.remove("zoom")
-  })
-  
-  sliderBtns[1].addEventListener("click", () => {
-    index++;
-      for (let i = 0; i < sliderDivs.length; i++) {
-     sliderDivs[i].classList.remove("active")
-    }
-    
-    if(index === sliderDivs.length){
-      index = 0;
-    } 
-    console.log(index)
-    
-    sliderDivs[index].classList.add("active")
-    sliderDivs[index].classList.add("slideIn")
-    slideImg.classList.remove("zoom")
-    
-  })
-  */
+ 
 const brand =  document.querySelector(".brand");
 const heading = document.querySelector("#placeholder h3");
 const second = document.querySelector(".second")
-const sliderbtn = document.querySelector("#slider a")
-placeholder.addEventListener("animationend", () => {
+const sliderbtn = document.querySelector("#placeholder a")
+heading.addEventListener("animationend", () => {
         second.style.opacity = "1";
         second.classList.add("slideIn")
 } )
@@ -131,23 +94,8 @@ brand.addEventListener("animationend", () => {
         sliderbtn.classList.add("slideUp")
 } )
  
- //Slide 2 Zomming animation
   
- const slide2 = document.querySelector("#slide2");
 
-
-const observer1 = new IntersectionObserver((entries) => {
-   entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-         console.log("it works");
-         entry.target.classList.add("zoom");
-      } else {
-         console.log("it doesn't work");
-      }
-   });
-});
-
-observer1.observe(slideImg);
  
  
  
