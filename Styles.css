@@ -130,7 +130,6 @@ header buttons {
     z-index: 0;
 }
 
-/* Dropdown Menu  */
 
 #logo h2 {
     display: inline-block;
@@ -149,10 +148,72 @@ header buttons {
     z-index: 0;
 }
 
-/* Dropdown Menu  */
-.regularMenu {
+/* ======== Dropdown Menu ========== */
+
+.regularMenu{
     display: none;
-}
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    font-weight: 600;
+    padding-left: 0;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 1rem;
+    margin: 0;
+    font-size: clamp(14px, 1.8vw, 18.5px);
+    
+  }
+  .regularMenu a{
+    color: white;
+  
+  }
+  .regularMenu li{
+    transition: all 1s;
+  }
+  .regularMenu li:hover{
+   background-color: hsl(0, 100%, 35%);
+   padding: 10px 15px;
+    border-radius: 20px;
+  }
+
+
+.dropdownElement{
+    position: relative;
+  }
+  .regularDropdown{
+    position: absolute;
+    width: calc(100% + 20px);
+    margin-top: 12px;
+    left:0;
+    overflow: hidden;
+    max-height: 0;
+    z-index: 3;
+    background-color: white;
+    padding-left: 0;
+    transition: all 1s;
+  }
+  .regularDropdown li{
+    padding: .5rem .5rem 1rem;
+  }
+  .regularDropdown a{
+    color: black;
+  
+  }
+  
+  /* Activate DropDown */
+  .dropdownElement:hover .regularDropdown{
+    max-height: 1000px;
+  }
+  .regularDropdown li:hover a{
+  color: white;
+  }
+  .dropdownElement:hover i{
+    transform: rotate(180deg);
+  }
+
+
 .dropdownMenu a {
     text-decoration: none;
     color: white;
@@ -478,12 +539,16 @@ main {
     position: relative;
     filter: blur(5px);
     transition-delay: 800ms;
-}
-#outro img:not(.triangle) {
-    width: 48%;
     height: auto;
-    border-radius: 5px;
+    min-height: 280px;
 }
+#outro img{
+    width:48%;
+    max-width: 300px;
+    height:auto;
+    border-radius: 5px;
+  
+  }
 #intro {
     position: relative;
     filter: blur(5px);
@@ -593,10 +658,51 @@ hr {
 }
 
 /* Media Queries */
-@media only screen and (max-width: 350px) {
-    .dropdownMenu {
-        width: 92%;
+@media only screen and (max-width:350px){
+    .dropdownMenu{
+      width: 92%;
     }
-}
-
-/* Animations */
+  }
+  @media only screen and (min-width:700px){
+    #Boxes div{
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+    }
+    #Boxes article{
+  width:24%;
+    }
+    
+    
+  }
+  
+  @media only screen and (min-width:600px){
+  .dropdownMenu #icon{
+    display: none;
+  }
+  #icon{
+    display: none;
+  }
+  .regularMenu{
+    display:block;
+  }
+  #links{
+  width: 50%;
+  }
+  .regularMenu{
+  display: flex;
+  }
+  }
+  
+  @media only screen and (min-width: 600px){
+    #img1{
+    float: left;
+    margin-right: 5px;
+   }
+   #img2{
+  display:none;
+   }
+  
+  }
+  
+  
