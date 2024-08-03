@@ -78,7 +78,7 @@ boxes[0].addEventListener("click", () => {
   } )
   
   //Image Slider
-  const slideImg = document.querySelector("#slide2 img");
+ /* const slideImg = document.querySelector("#slide2 img");
   const sliderDivs = document.querySelectorAll("#slider div");
   sliderDivs[0].classList.add("active")
   const sliderBtns = document.querySelectorAll("#imageslider button")
@@ -113,7 +113,7 @@ boxes[0].addEventListener("click", () => {
     slideImg.classList.remove("zoom")
     
   })
-  
+  */
 const brand =  document.querySelector(".brand");
 const heading = document.querySelector("#placeholder h3");
 const second = document.querySelector(".second")
