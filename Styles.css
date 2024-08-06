@@ -37,7 +37,9 @@ a{
     background-position: top;
     color: white;
 }
-
+#placeholder a{
+font-size:14px;
+}
 
 
 
@@ -92,7 +94,7 @@ header buttons {
     z-index: 0;
 }
 
-/* ======== Dropdown Menu ========== */
+/* ======== Navigation Menu ========== */
 
 .regularMenu{
     display: none;
@@ -106,12 +108,17 @@ header buttons {
     color: white;
     font-size: 1rem;
     margin: 0;
-    font-size: clamp(14px, 1.8vw, 18.5px);
+    font-size: clamp(14px, 1.8vw, 17px);
     
   }
   .regularMenu a{
     color: white;
     text-decoration: none;
+  }
+  .selected{
+    background-color: hsl(0, 100%, 35%);
+   padding: 10px 15px;
+    border-radius: 20px;
   }
   .regularMenu li{
     transition: all 1s;
@@ -178,12 +185,12 @@ main {
     min-height: 100vh;
     padding: 15px 0 0 0;
     border-radius: 15px 0 0 15px;
-    background-color: #000000cf;
+    background-color: hsl(0, 0%, 10%);
     overflow: hidden;
     width: clamp(130px, 50%, 400px);
     transition: all 1s;
     backdrop-filter: blur(15px);
-    z-index: 2;
+    z-index: 3;
     /* max-height: 1000px; */
 }
 .dropdownMenu li {
@@ -208,7 +215,7 @@ main {
     overflow: hidden;
     max-height: 0;
     transition: max-height 1s;
-    background-color: hsla(0, 3%, 40%, 0.2);
+    background-color: hsla(0, 0%, 15%, 1);
     border-radius: 10px;
     width: 100%;
     backdrop-filter: blur(15px);
@@ -634,13 +641,13 @@ hr {
   }
   #links{
   width: 50%;
+  max-width:500px;
+  padding-right: 50px;
   }
   .regularMenu{
   display: flex;
   }
-  }
-  
-  @media only screen and (min-width: 600px){
+ 
     #img1{
     float: left;
     margin-right: 5px;
@@ -648,7 +655,36 @@ hr {
    #img2{
   display:none;
    }
-  
+#placeholder{
+    background-position: center;
+}
   }
   
+ @media only screen and (min-width:990px){
+    #placeholder{
+        height:80vh;
+    }
+    .second{
+font-size: 19px;
+    font-weight: 500;
+    }
+    .brand{
+   font-size: 24px;
+    }
+    #placeholder a{
+        font-size: 19px;
+    }
+#logo h2{
+margin:0;
+}
+#logo{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}    
+header{
+    min-height:72px;
+    background-color: hsl(0, 100%, 50%);
+}
+ } 
   
