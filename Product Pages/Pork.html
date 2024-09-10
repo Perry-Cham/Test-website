@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../Styles.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="Styles/Pork.css" type="text/css" media="all" />
+  
   
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  
@@ -14,6 +14,7 @@
     rel="stylesheet"
 />
   <link rel="stylesheet" href="Styles/Beef.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="Styles/Pork.css" type="text/css" media="all" />
   <title>Premier Pork</title>
 </head>
 <body>
@@ -21,10 +22,10 @@
   
     <nav id="links">
         <ul class="regularMenu">
-          <li><a href="../index.html">Home</a></li>
+          <li><a href="../index.html" >Home</a></li>
           <li><a href="../About.html">About</a></li>
       
-          <li class="dropdownElement"><div ></div>Products  <i class="ri-arrow-down-s-line"></i></div>
+          <li class="dropdownElement" class="selected"><div>Products <i class="ri-arrow-down-s-line"></i></div>
           <ul class="regularDropdown">
             <li><a href="Beef.html">Beef</a></li>
             <li><a href="Chicken.html">Chicken</a></li>
@@ -43,32 +44,47 @@
   </header>
    
     <main>
-
-      <ul class="dropdownMenu">
-        <li><a href="../index.html">Home</a></li>
-        <li style="padding:1rem 0;">
-          <div class="dropdown">Products <i class="ri-arrow-down-s-line"></i>
-          </div>
-          <ul class="List">
-            <li><a href="Beef.html">Beef</a></li>
-            <li><a href="Chicken.html">Chicken</a></li>
-            <li><a href="Pork.html">Pork</a></li>
-            <li><a href="ProcessedMeats.html">Processed Meats</a></li>
-          </ul>
-        </li>
-        <li><a href="../About.html">About</a></li>
-        <li><a href="../Contact.html">Contact Us</a></li>
+<nav>
+  <ul class="dropdownMenu">
+    <li><a href="../index.html">Home</a></li>
+    <li style="padding:1rem 0;">
+      <div class="dropdown">Products <i class="ri-arrow-down-s-line"></i>
+      </div>
+      <ul class="List">
+        <li><a href="Beef.html">Beef</a></li>
+        <li><a href="Chicken.html">Chicken</a></li>
+        <li><a href="Pork.html">Pork</a></li>
+        <li><a href="ProcessedMeats.html">Processed Meats</a></li>
       </ul>
+    </li>
+    <li><a href="../About.html">About</a></li>
+    <li><a href="../Contact.html">Contact Us</a></li>
+  </ul>
+</nav>
+      
       
     
-
+ <div class="image"></div>
       <section class="intro">
-        <h3>Our Pork</h3>
+        <img src="../../Images/Food Posters/pork header.jpg" alt="">
+        <div>
+          <h2>Our Pork</h2>
           <p>PREMIER offers one of the most widely eaten and popular meats in the world... PORK!!!</p>
           <p>On offer are whole pork carcasses and pork cuts</p>
+        </div>
       </section>
-      <h3 class="heading">Pork Cuts</h3>
+
+      <div>
+      <h3 class="heading" id="heading"> <!-- <span>Pork</span> --> Pork Cuts</h3>
       <section class="gridContainer">
+
+        <div>
+          <article>
+            <img loading="lazy" src="Product Images/Pork/istockphoto-1126326891-612x612.jpg" alt="">
+          </article>
+          <h4>Pork Carcasses</h4>
+        </div>
+
         <div>
           <article>
           <img loading="lazy" src="Product Images/Pork/hobss-pork-leg-chops_1200x1200.jpg" alt="">
@@ -83,12 +99,7 @@
           <h4>Pork Belly</h4>
         </div>
         
-        <div>
-          <article>
-            <img loading="lazy" src="Product Images/Pork/istockphoto-1126326891-612x612.jpg" alt="">
-          </article>
-          <h4>Pork Carcasses</h4>
-        </div>
+       
         
         <div>
           <article>
@@ -99,9 +110,9 @@
         
         <div>
           <article>
-            <img loading="lazy" src="Product Images/Pork/hobss-pork-leg-chops_1200x1200.jpg" alt="">
+            <img loading="lazy" src="Product Images/Pork/pork leg.jpg" alt="">
           </article>
-          <h4>Pork leg chops</h4>
+          <h4>Pork leg</h4>
         </div>
         
         <div>
@@ -120,6 +131,7 @@
           <article>
           <img loading="lazy" src="Product Images/Pork/PorkNeck_2048x.webp" alt="">
         </article>
+        <h4>Pork Neck</h4>
         </div>
 
         <div>
@@ -135,11 +147,8 @@
         </article>
         <h4>Pork Liver</h4>
         </div>
-        
-        
-        
       </section>
-      
+      </div>
       
           <section id="order">
       <div id="image"></div>
@@ -158,22 +167,6 @@
     </section>
     </main>
     <footer>
-      <section id="contactInfo">
-        <div>
-      <p>Contact us: Email</p>
-       <address>
-      lubinda.chamileke@gmail.com
-      </address>
-        </div>
-        
-        <div>
-      <p>
-        <p>Phone number:</p>
-       <p>Lubinda Chamileke (CEO):<br>
-        0977345462 
-      </p>
-        </div>
-      </section>
       <div id="socials">
         <i class="fab fa-facebook"></i>
         <i class="fab fa-twitter"></i>
