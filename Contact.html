@@ -5,46 +5,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
- <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="stylesheet" href="Styles.css" type="text/css" media="all" />
-  
+
   <link rel="stylesheet" href="Styles/Contact.css" type="text/css" media="all" />
-  
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Contact Us</title>
 </head>
 
 <body>
   <header>
-    <div id="logo"><img class="logo" src="Images/Logo.png">
+    <div id="logo"><a href="index.html">
+        <img class="logo" src="Images/Logo.png">
+      </a>
       <h2 class="slideOut">Premier Meats</h2>
     </div>
 
     <nav id="links">
       <ul class="regularMenu">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="About.html">About</a></li>
+        <li><a href="index.html">Home</a></li>
 
-    <li class="dropdownElement"><div>Products  <i class="ri-arrow-down-s-line"></i></div>
-    <ul class="regularDropdown">
-      <li><a href="Product Pages/Beef.html">Beef</a></li>
-      <li><a href="Product Pages/Chicken.html">Chicken</a></li>
-      <li><a href="Product Pages/Pork.html">Pork</a></li>
-      <li><a href="Product Pages/ProcessedMeats.html">Processed Meats</a></li>
-    </ul>
-  </li>
-    <li class="selected"><a href="Contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+
+        <li class="dropdownElement">
+          <div>Products <i class="ri-arrow-down-s-line"></i></div>
+          <ul class="regularDropdown">
+            <li><a href="Product Pages/Beef.html">Beef</a></li>
+            <li><a href="Product Pages/Chicken.html">Chicken</a></li>
+            <li><a href="Product Pages/Pork.html">Pork</a></li>
+            <li><a href="Product Pages/ProcessedMeats.html">Processed Meats</a></li>
+          </ul>
+        </li>
+
+        <li><a href="About.html">About</a></li>
+        <li class="selected"><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
     <div id="icon">
       <i class="fas fa-bars"></i>
     </div>
   </header>
-  
-  
+
+
   <main>
     <ul class="dropdownMenu">
       <li><a href="index.html">Home</a></li>
@@ -54,15 +58,15 @@
         <ul class="List">
           <li><a href="Product Pages/Beef.html">Beef</a></li>
           <li><a href="Product Pages/Chicken.html">Chicken</a></li>
-          <li><a href="Product Pages/Chicken.html" >Pork</a></li>
+          <li><a href="Product Pages/Chicken.html">Pork</a></li>
           <li><a href="Product Pages/Chicken.html">Processed Meats</a></li>
         </ul>
       </li>
-      
+
       <li><a href="About.html">About</a></li>
       <li><a href="Contact.html">Contact Us</a></li>
     </ul>
-    
+
     <section>
       <h3 class="heading">Contact Us</h3>
       <h4>Bank Details</h4>
@@ -84,13 +88,13 @@
           <p>36007</p>
         </div>
       </article>
-      
+
       <article class="registration" id="reg">
         <h4>Z.R.A REGISTRATION</h4>
         <p style=" font-size:14px; text-align:justify;">We are reguatered with the Zambia Public Procurement Authority
           (ZPPA) and our registration Number is 40670. We are in posssession of a valid ZPPA certificate.</p>
       </article>
-      
+
       <div id="numbers">
         <article class="numbers">
           <h3>Contact Details:</h3>
@@ -107,7 +111,7 @@
               <li>+260-968-270439</li>
             </ul>
           </div>
-          
+
           <div>
             <p class="labels contact">Email us:</p>
             <ul class="email">
@@ -115,16 +119,16 @@
               <li>lubinda.chamileke@gmail.com(Chief Sales Officer)</li>
             </ul>
           </div>
-          
+
         </article>
       </div>
-      
-      
+
+
     </section>
-    
+
   </main>
   <footer>
-   <!-- <section id="contactInfo">
+    <!-- <section id="contactInfo">
       <div>
         <p>Contact us: Email</p>
         <address>
@@ -152,35 +156,35 @@
     <article id=Copyright>&copy; Premier Meats 2024</article>
   </footer>
   <script>
-    const arrow = document.querySelector(".dropdown i")    
-const dropdown = document.querySelector(".dropdown")
-const menu = document.querySelector(".dropdownMenu")
-const icon = document.querySelector(".fa-bars")
+    const arrow = document.querySelector(".dropdown i")
+    const dropdown = document.querySelector(".dropdown")
+    const menu = document.querySelector(".dropdownMenu")
+    const icon = document.querySelector(".fa-bars")
 
-//Navugation Bar
-icon.addEventListener("click",() => {
-menu.classList.toggle("open");
-if (icon.classList.contains("fa-bars")) {
-  icon.classList.add("fa-spin")
-  icon.classList.remove("fa-bars")
-  icon.classList.add("fa-times")
-  icon.classList.remove("fa-spin")
-  
-} else {
-  icon.classList.add("fa-spin")
-  icon.classList.remove("fa-times")
-  icon.classList.remove("fa-spin")
-  icon.classList.add("fa-bars")
-}
-} );
+    //Navugation Bar
+    icon.addEventListener("click", () => {
+      menu.classList.toggle("open");
+      if (icon.classList.contains("fa-bars")) {
+        icon.classList.add("fa-spin")
+        icon.classList.remove("fa-bars")
+        icon.classList.add("fa-times")
+        icon.classList.remove("fa-spin")
 
-//dropdown menu
+      } else {
+        icon.classList.add("fa-spin")
+        icon.classList.remove("fa-times")
+        icon.classList.remove("fa-spin")
+        icon.classList.add("fa-bars")
+      }
+    });
+
+    //dropdown menu
     const list = document.querySelector(".List")
     dropdown.addEventListener("click", () => {
       dropdown.classList.toggle("dropdownPadding")
-      if(arrow.classList.contains("rotate")){
+      if (arrow.classList.contains("rotate")) {
         arrow.classList.remove("rotate")
-      }else{
+      } else {
         arrow.classList.add("rotate")
       }
       list.classList.toggle("active")

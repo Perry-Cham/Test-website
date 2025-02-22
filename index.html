@@ -5,45 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-    rel="stylesheet"
-/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
   <link rel="shortcut icon" href="Images/Logo.png" type="image/x-icon" />
- 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles.css" type="text/css" media="all" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Styles.css" type="text/css" media="all" />
   <title>Premier Empire Meats</title>
 </head>
 
 <body>
-  
+
   <!-- Header and nav links -->
   <header>
-    <div id="logo"><img class="logo" src="Images/Logo.png">
-      <h2>PREMIER</h2>
+    <div id="logo"><a href="index.html">
+        <img class="logo" src="Images/Logo.png">
+      </a>
+      <h2 class="slideOut">Premier Meats</h2>
     </div>
+
     <nav id="links">
       <ul class="regularMenu">
-    <li><a href="Index.html" class="selected">Home</a></li>
-    <li><a href="About.html">About</a></li>
+        <li><a href="Index.html" class="selected">Home</a></li>
 
-    <li class="dropdownElement"><div>Products  <i class="ri-arrow-down-s-line"></i></div>
-    <ul class="regularDropdown">
-      <li><a href="Product Pages/Beef.html">Beef</a></li>
-      <li><a href="Product Pages/Chicken.html">Chicken</a></li>
-      <li><a href="Product Pages/Pork.html">Pork</a></li>
-      <li><a href="Product Pages/ProcessedMeats.html">Processed Meats</a></li>
-    </ul>
-  </li>
-    <li><a href="Contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
+        <li class="dropdownElement">
+          <div>Products <i class="ri-arrow-down-s-line"></i></div>
+          <ul class="regularDropdown">
+            <li><a href="Product Pages/Beef.html">Beef</a></li>
+            <li><a href="Product Pages/Chicken.html">Chicken</a></li>
+            <li><a href="Product Pages/Pork.html">Pork</a></li>
+            <li><a href="Product Pages/ProcessedMeats.html">Processed Meats</a></li>
+          </ul>
+        </li>
+        <li><a href="About.html">About</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
     <div id="icon">
       <i class="fas fa-bars"></i>
     </div>
-    
+
   </header>
   <main>
     <ul class="dropdownMenu">
@@ -61,113 +65,126 @@
       <li><a href="About.html">About</a></li>
       <li><a href="Contact.html">Contact Us</a></li>
     </ul>
-    
-     <div id="carouselExampleIndicators" class="carousel slide">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-                  <div id="placeholder">
-              <article>
-                <h3>WELCOME</h3>
-                
-                <p class="second" style="opacity:0;">To</p>
-                
-                <p class="brand" style="opacity:0;">PREMIER EMPIRE MEATS</p>
-              </article>
-              <a href="Contact.html" class="red-link-button" style="opacity:0; display: inline-block;">Get in touch with us</a>
-            </div>
-    </div>
-    <div class="carousel-item">
-      <img src="Images/Food Posters/Beef.png" style="height:50vh;" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="Images/Food Posters/Beef.png" style="height:50vh;" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
 
- 
-    
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div id="placeholder">
+            <article>
+              <h3>WELCOME</h3>
+
+              <p class="second" style="opacity:0;">To</p>
+
+              <p class="brand" style="opacity:0;">PREMIER EMPIRE MEATS</p>
+            </article>
+            <a href="Contact.html" class="red-link-button" style="opacity:0; display: inline-block;">Get in touch with
+              us</a>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Food Posters/Beef.png" style="height:50vh;" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="Images/Food Posters/Beef.png" style="height:50vh;" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
     <!--background curves-->
     <div class="curve" aria-hidden="true">
       <div class="wave" aria-hidden="true">
-        <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path aria-hidden="true" d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-                                                                                                                                  opacity=".25"
-                                                                                                                                  class="shape-fill">
+        <svg aria-hidden="true" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+          preserveAspectRatio="none">
+          <path aria-hidden="true"
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill">
           </path>
-          <path aria-hidden="true" d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-                                                                                                                                  opacity=".5"
-                                                                                                                                  class="shape-fill">
+          <path aria-hidden="true"
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill">
           </path>
-          <path aria-hidden="true" d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                                                                                                                                  class="shape-fill">
+          <path aria-hidden="true"
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill">
           </path>
         </svg>
       </div>
-      
+
     </div>
     <!--Three Boxes -->
     <section style="background-color: var(--main-color);">
       <section id="Boxes" style="background-color: white;">
         <h2>Our Selection of Delicacies</h2>
         <div>
-        <article id="chicken">
-          <div>
-            <h3><a style="color:white;" href="Product pages/Chicken.html">View Product</a></h3>
-          </div>
-        </article>
-        
-        <article id="pork">
-          <div>
-            <h3><a style="color:white;" href="Product Pages/Pork.html">View Product</a></h3>
-          </div>
-        </article>
-        
-        <article id="beef">
-          <div>
-            <h3><a style="color:white;" href="Product Pages/Beef.html">View Product</a></h3>
-          </div>
-        </article>
-        
-        <article id="ready">
-          <div>
-            <h3><a href="Product Pages/ProcessedMeats.html">View Product</a></h3>
-          </div>
-        </article>
-      </div>
+          <article id="chicken">
+            <div>
+              <h3><a style="color:white;" href="Product pages/Chicken.html">View Product</a></h3>
+            </div>
+          </article>
+
+          <article id="pork">
+            <div>
+              <h3><a style="color:white;" href="Product Pages/Pork.html">View Product</a></h3>
+            </div>
+          </article>
+
+          <article id="beef">
+            <div>
+              <h3><a style="color:white;" href="Product Pages/Beef.html">View Product</a></h3>
+            </div>
+          </article>
+
+          <article id="ready">
+            <div>
+              <h3><a href="Product Pages/ProcessedMeats.html">View Product</a></h3>
+            </div>
+          </article>
+        </div>
       </section>
     </section>
     <!-- background curves -->
     <div class="curve">
       <div class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"class="shape-fill">
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill">
           </path>
-          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"opacity=".5"class="shape-fill">
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill">
           </path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-                                                                                                                                  class="shape-fill">
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            class="shape-fill">
           </path>
         </svg>
       </div>
-      
+
     </div>
-    
+
     <!-- About info -->
-    
+
     <section id="aboutInfo">
       <div class="aboutInfo-div" id="intro">
         <h3>
@@ -181,44 +198,51 @@
         <p>We seek to save our customers time, effort and most importantly bottom line costs emphasising affordability,
           product accessibility and product availability. </p>
         <a class="red-link-button" href="Contact.html">Get In Touch With us</a>
-     
+
       </div>
-      
+
       <div class="aboutInfo-div" id="outro">
         <h3>Services Offered</h3>
 
 
-         <article class="outro-grid">
-          <img class="truck outro-img"  src="Images/Company pics/IMG-20240703-WA0022.jpg" alt="">
+        <article class="outro-grid">
+          <img class="truck outro-img" src="Images/Company pics/IMG-20240703-WA0022.jpg" alt="">
 
           <div>
-            <p>"<strong><em>PREMIER MEATS</em></strong>" is registered with the Patents and Companies Registration Agency,
+            <p>"<strong><em>PREMIER MEATS</em></strong>" is registered with the Patents and Companies Registration
+              Agency,
               PACRA, as PREMIER EMPIRE MEATS (certificate no. 320190015975), a Zambian conpany created with a focus on
-              producing and supplying beef, pork, chevon, mutton, lamb, processed meats, eggs and fresh fish to the local as
+              producing and supplying beef, pork, chevon, mutton, lamb, processed meats, eggs and fresh fish to the
+              local as
               well as the regional export markets.</p>
-              <img class="outro-img"  id="img2" src="Images/Company pics/IMG-20240703-WA0013.jpg" alt="">
+            <img class="outro-img" id="img2" src="Images/Company pics/IMG-20240703-WA0013.jpg" alt="">
             <p>
               Our staff is exceptionally talented and boasts vast years of experience in every key area of the meat
               business. We are thus well positioned to offer excellent service to Zambia and beyond.</p>
             <a class="red-link-button" href="About.html">Learn More...</a>
           </div>
-          
-        
-         </article>
-      
+
+
+        </article>
+
       </div>
     </section>
-    
+
     <section id="order">
       <div id="image"></div>
       <div class="wave">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25"
+          <path
+            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+            opacity=".25" class="shape-fill">
+          </path>
+          <path
+            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+            opacity=".5" class="shape-fill">
+          </path>
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
             class="shape-fill">
-          </path>
-          <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill">
-          </path>
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill">
           </path>
         </svg>
       </div>
@@ -239,8 +263,9 @@
     <article id=Copyright>&copy; Premier Meats 2024</article>
   </footer>
   <script src="Script.js"></script>
-  
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
     </script>
 </body>
 
