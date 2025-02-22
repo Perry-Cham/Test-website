@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+  <link rel="stylesheet" href="Styles.css" type="text/css" media="all" />
+  
+  <link rel="stylesheet" href="Styles/Contact.css" type="text/css" media="all" />
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <header>
+    <div id="logo"><img class="logo" src="Images/Logo.png">
+      <h2 class="slideOut">Premier Meats</h2>
+    </div>
+
+    <nav id="links">
+      <ul class="regularMenu">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="About.html">About</a></li>
+
+    <li class="dropdownElement"><div>Products  <i class="ri-arrow-down-s-line"></i></div>
+    <ul class="regularDropdown">
+      <li><a href="Product Pages/Beef.html">Beef</a></li>
+      <li><a href="Product Pages/Chicken.html">Chicken</a></li>
+      <li><a href="Product Pages/Pork.html">Pork</a></li>
+      <li><a href="Product Pages/ProcessedMeats.html">Processed Meats</a></li>
+    </ul>
+  </li>
+    <li class="selected"><a href="Contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+    <div id="icon">
+      <i class="fas fa-bars"></i>
+    </div>
+  </header>
+  
+  
+  <main>
+    <ul class="dropdownMenu">
+      <li><a href="index.html">Home</a></li>
+      <li style="padding:1rem 0;">
+        <div class="dropdown">Products <i class="ri-arrow-down-s-line"></i>
+        </div>
+        <ul class="List">
+          <li><a href="Product Pages/Beef.html">Beef</a></li>
+          <li><a href="Product Pages/Chicken.html">Chicken</a></li>
+          <li><a href="Product Pages/Chicken.html" >Pork</a></li>
+          <li><a href="Product Pages/Chicken.html">Processed Meats</a></li>
+        </ul>
+      </li>
+      
+      <li><a href="About.html">About</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+    
+    <section>
+      <h3 class="heading">Contact Us</h3>
+      <h4>Bank Details</h4>
+      <article class="bank">
+        <div class="labels">
+          <p>Account Holder:</p>
+          <p>Bank: </p>
+          <p>Branch: </p>
+          <p>Account Number: </p>
+          <p>Swift Code: </p>
+          <p>Branch Code: </p>
+        </div>
+        <div>
+          <p>Premier Meats</p>
+          <p>Ecobank Zambia</p>
+          <p>EZM industrial Branch- Lumumba rd</p>
+          <p>5652500004779</p>
+          <p>ECOMZMLU</p>
+          <p>36007</p>
+        </div>
+      </article>
+      
+      <article class="registration" id="reg">
+        <h4>Z.R.A REGISTRATION</h4>
+        <p style=" font-size:14px; text-align:justify;">We are reguatered with the Zambia Public Procurement Authority
+          (ZPPA) and our registration Number is 40670. We are in posssession of a valid ZPPA certificate.</p>
+      </article>
+      
+      <div id="numbers">
+        <article class="numbers">
+          <h3>Contact Details:</h3>
+          <p>PREMIER MEATS,</p>
+          <p>No. 5 Nyemba Close,</p>
+          <p>Woodlands</p>
+          <p>Lusaka</p>
+          <div>
+            <p class="labels contact">Tel:</p>
+            <ul class="phoneNumbers" style="font-weight: 500;">
+              <li>+260-977-345462</li>
+              <li>+260-977-833658</li>
+              <li>+260 97 7196140</li>
+              <li>+260-968-270439</li>
+            </ul>
+          </div>
+          
+          <div>
+            <p class="labels contact">Email us:</p>
+            <ul class="email">
+              <li>premiermeatsinfo@gmail.com</li>
+              <li>lubinda.chamileke@gmail.com(Chief Sales Officer)</li>
+            </ul>
+          </div>
+          
+        </article>
+      </div>
+      
+      
+    </section>
+    
+  </main>
+  <footer>
+   <!-- <section id="contactInfo">
+      <div>
+        <p>Contact us: Email</p>
+        <address>
+          lubinda.chamileke@gmail.com
+        </address>
+      
+      </div>
+      
+      <div>
+        <p>
+        <p>Phone number:</p>
+        <p>Lubinda Chamileke (CEO):<br>
+          0977345462
+        </p>
+        </p>
+      </div>
+    </section> -->
+    <div id="socials">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+      <i class="fab fa-whatsapp"></i>
+    </div>
+    <article id=Copyright>&copy; Premier Meats 2024</article>
+  </footer>
+  <script>
+    const arrow = document.querySelector(".dropdown i")    
+const dropdown = document.querySelector(".dropdown")
+const menu = document.querySelector(".dropdownMenu")
+const icon = document.querySelector(".fa-bars")
+
+//Navugation Bar
+icon.addEventListener("click",() => {
+menu.classList.toggle("open");
+if (icon.classList.contains("fa-bars")) {
+  icon.classList.add("fa-spin")
+  icon.classList.remove("fa-bars")
+  icon.classList.add("fa-times")
+  icon.classList.remove("fa-spin")
+  
+} else {
+  icon.classList.add("fa-spin")
+  icon.classList.remove("fa-times")
+  icon.classList.remove("fa-spin")
+  icon.classList.add("fa-bars")
+}
+} );
+
+//dropdown menu
+    const list = document.querySelector(".List")
+    dropdown.addEventListener("click", () => {
+      dropdown.classList.toggle("dropdownPadding")
+      if(arrow.classList.contains("rotate")){
+        arrow.classList.remove("rotate")
+      }else{
+        arrow.classList.add("rotate")
+      }
+      list.classList.toggle("active")
+    })
+  </script>
+</body>
+
+</html>

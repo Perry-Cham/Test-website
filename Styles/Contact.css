@@ -1,0 +1,83 @@
+.heading {
+    padding-left: 5px;
+}
+#reg h4 {
+    background-color: red;
+    color: white;
+    margin: 11px 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+article {
+    padding-left: 5px;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+#reg p {
+    font-size: 14;
+    text-align: justify;
+}
+
+.bank {
+    display: flex;
+    font-size: 14px;
+}
+
+.bank div {
+    flex-grow: 1;
+}
+
+.labels,
+.labels p {
+    font-weight: 500;
+}
+
+/* Numbers */
+#numbers {
+    padding: 10px 0px;
+    margin-bottom: 10px;
+}
+
+.numbers {
+    /* background-color: #fffa2bf2; */
+    font-size: 14px;
+    background-color: red;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.6);
+}
+.numbers div {
+    display: flex;
+}
+.subHeading {
+    padding: 0;
+    margin: 0;
+}
+.label.contact {
+    font-weight: 570;
+}
+.phoneNumber {
+    font-weight: 500;
+}
+
+.email {
+    padding-left: 20px;
+    font-weight: 500;
+}
+
+h4 {
+    margin-left: 5px;
+    margin-right: 10px;
+    background-color: red;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 11px;
+}

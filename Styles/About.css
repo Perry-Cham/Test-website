@@ -1,0 +1,124 @@
+:root{
+   font-family: Book Antiqua;
+  
+}
+main{
+  font-size: 14px;
+  font-family: Open sans;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+main li{
+  list-style: circle;
+}
+h3{
+  margin: 0;
+  padding: 10px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 3px 3px 8px  #000000cd;
+}
+
+.list{
+  display: flex; 
+  flex-direction: column;
+  gap:5px;
+}
+section{
+  padding:8px 10px; 
+  text-align: justify;
+  margin: 10px 0;
+}
+.retail p{
+  word-spacing: 3px;
+  line-height: 1.4em;
+}
+
+/* MISSION */
+.mission h3{
+  color: white;
+}
+.values h3{
+  background-color: yellow;
+  color: black;
+}
+
+/* MARKET */
+.market article{
+  margin-bottom: 20px;
+}
+.market h3{
+  padding-bottom: 5px;
+  padding-left: 0;
+  display: block;
+  text-align: left;
+  background-color: initial;
+  box-shadow: initial;
+  color:red;
+}
+/* The Team */
+.theTeam{
+  margin-bottom: 50px;
+}
+.theTeam article{
+  margin-bottom: 4rem;
+}
+.market p:not(last-child){
+  margin-top: 5px;
+}
+/* MANAGEMENT */
+.theTeam img{
+  width: 45%;
+  height: auto;
+  float: left;
+  margin-right: 5px;
+}
+/* INTRO */
+.intro img{
+  display: block;
+  width:100%;
+  max-width: 538px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 5px;
+  border-radius:5px;
+}
+
+@media only screen and (min-width: 550px){
+  .intro img{
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  p{
+    max-width: 600px;
+  }
+  section{
+    font-size:clamp(14px, 5vh, 18px);
+    margin-bottom: 30px;
+  }
+
+}
+
+/* SUBMENU STYLES */
+.dropdownMenu{
+  color:white;
+}
+.subMenu{
+ padding:0;
+ align-items: center;
+ justify-content: space-around;
+ flex-direction: column;
+ display: none;
+}
+.subMenu li{
+  list-style: none;
+  color: white;
+}

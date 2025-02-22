@@ -1,0 +1,21 @@
+.extraInfo{
+    margin-left: 10px;
+}
+.extraInfo li{
+    list-style: none;
+    position: relative;
+    padding-left: 20px;
+
+}
+.extraInfo li::before{
+    content:"";
+    position: absolute;
+    left:0;
+    top:0;
+    width:1em;
+    height: 1em;
+    background-image:url("../../Images/sun-svgrepo-com.svg");
+    background-position: center;
+    background-size: contain;
+
+}
